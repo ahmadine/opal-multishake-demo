@@ -78,7 +78,7 @@ task :size do
     sz_shaked = File.size(shaked)
     sz_unshaked = File.size(unshaked)
 
-    reduction = 100.0 * sz_shaked / sz_unshaked
+    reduction = 100.0 * (sz_unshaked - sz_shaked) / sz_unshaked
 
     puts "#{unshaked}: #{sz_unshaked} -> #{sz_shaked} (#{reduction.round(2)}% reduction)"
   end
