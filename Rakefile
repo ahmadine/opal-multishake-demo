@@ -1,13 +1,14 @@
 require 'bundler'
 Bundler.setup
 require 'opal'
+require 'opal/browser'
 Opal.append_path("./opal")
 
 app="example"
 
 directory "dist"
 
-apps = ["opal_base", "opal_mini", "opal_std"]
+apps = ["opal_base", "opal_mini", "opal_std", "opal_x_browser"]
 
 apps.each do |app|
   file "dist/#{app}.js" => ["dist"] do
@@ -69,7 +70,7 @@ task :build => apps.map { |i| "#{i}_build" }
 task :shake => apps.map { |i| "#{i}_shake" }
 task :test => apps.map { |i| "#{i}_test" }
 
-task :size => [:build] do
+task :size do
   Dir["dist/*.shake.*"].each do |shaked|
     unshaked = shaked.dup
     unshaked[".shake"] = ""

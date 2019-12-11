@@ -38,7 +38,7 @@ $ rake
 
 # How well does it work exactly?
 
-For the most basic Hello world script (with opal/base, opal/mini and opal included respectively):
+For the most basic Hello world script (with opal/base, opal/mini, opal and opal+opal-browser included respectively):
 
 Loading times:
 
@@ -54,6 +54,10 @@ Loading times:
     Success: dist/opal_std.min.js (0.200817291s)
     Success: dist/opal_std.shake.js (0.176391307s)
     Success: dist/opal_std.shake.min.js (0.163372925s)
+    Success: dist/opal_x_browser.js (0.434136712s)
+    Success: dist/opal_x_browser.min.js (0.394412487s)
+    Success: dist/opal_x_browser.shake.js (0.300694974s)
+    Success: dist/opal_x_browser.shake.min.js (0.287267739s)
 
 Sizes:
 
@@ -69,5 +73,9 @@ Sizes:
     dist/opal_std.min.js: 313154 -> 178336 (56.95% reduction)
     dist/opal_std.min.js.gz: 78754 -> 46926 (59.59% reduction)
     dist/opal_std.min.js.br: 65021 -> 39668 (61.01% reduction)
+    dist/opal_x_browser.js: 1365725 -> 929422 (68.05% reduction)
+    dist/opal_x_browser.min.js: 564557 -> 366205 (64.87% reduction)
+    dist/opal_x_browser.min.js.gz: 129060 -> 85511 (66.26% reduction)
+    dist/opal_x_browser.min.js.br: 104366 -> 69974 (67.05% reduction)
 
 (Please update this part if you will happen to make some improvements)
