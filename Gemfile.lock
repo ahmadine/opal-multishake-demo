@@ -8,7 +8,8 @@ GIT
 
 GIT
   remote: git://github.com/opal/opal.git
-  revision: 18fe9d88972aa536d0693d92547ad9f91de6b36d
+  revision: ab5df53aaa4adacfb8f180a40aa175cde3233009
+  ref: ab5df53aaa4adacfb8f180a40aa175cde3233009
   specs:
     opal (1.0.0)
       ast (>= 2.3.0)
